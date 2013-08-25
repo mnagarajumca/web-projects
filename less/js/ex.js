@@ -1,0 +1,1 @@
+var c=document.getElementById('pagination-centered').onclick=function(){alert('j');};

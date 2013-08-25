@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="boot3/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/less" href="css/less.less">
+<script src="js/less-1.4.1.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <header>
+      <h1 class="pull-left">WELCOME</h1>
+      <div class="row"><img src="images/cake.jpg" alt="cakelogo" /></div>
+    </header>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-info"><h4>BY USING CSS KEYFRAME ANIMATIONS WE CAN ANIMATE THE HTML ELEMENTS.</h4></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-success"><h4>JQUERY ANIMATES THE HTML ELEMENTS WITH FUNCTIONS</h4></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-primary"><h4>LESSCSS IS DYNAMIC CSS WITH MANY FEATURES</h4></div>
+  </div>
+ <div class="row">
+     <div class="pull-right"> <img src="images/jet.jpg" alt="jet"  id="jet"> </div>
+  </div>
+</div>
+<script src="lib/jquery/jquery-1.10.1.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+$("img[src*='jet.jpg']").click(function() {
+  $("#jet").addClass("jet");
+  setTimeout(function(){
+  $("#jet").removeClass("jet");
+  },2000);
+});
+});
+</script>
+</body>
+</html>
