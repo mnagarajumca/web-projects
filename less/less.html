@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
 <link rel="stylesheet" type="text/css" href="boot3/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/less" href="css/less.less">
@@ -12,27 +13,53 @@
   <div class="row">
     <header>
       <h1 class="pull-left">WELCOME</h1>
-      <div class="row"><img src="images/cake.jpg" alt="cakelogo" /></div>
+      <div class="row pull-right"><img src="images/cake.jpg" alt="cakelogo" class="img-thumbnail" /></div>
     </header>
   </div>
   <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-info"><h4>BY USING CSS KEYFRAME ANIMATIONS WE CAN ANIMATE THE HTML ELEMENTS.</h4></div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-success"><h4>JQUERY ANIMATES THE HTML ELEMENTS WITH FUNCTIONS</h4></div>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-primary"><h4>LESSCSS IS DYNAMIC CSS WITH MANY FEATURES</h4></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-info"><p>BY USING CSS KEYFRAME ANIMATIONS WE CAN ANIMATE THE HTML ELEMENTS.BY USING CSS KEYFRAME ANIMATIONS WE CAN ANIMATE THE HTML ELEMENTS.</p></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-success"><p>JQUERY ANIMATES THE HTML ELEMENTS WITH FUNCTIONS JQUERY ANIMATES THE HTML ELEMENTS WITH FUNCTIONS</p></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-primary"><p>LESSCSS IS DYNAMIC CSS WITH MANY FEATURES LESSCSS IS DYNAMIC CSS WITH MANY FEATURES</p></div>
+  </div>
+  <div class="row" id="mid">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-info">
+    <div class="row"><div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+    <h3>case studies</h3><p>one of the estimed consulting service,solutions and sourcing organizations.</p>
+    </div></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-success">
+     <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <img src="images/best-wallpapers-of-2013-photographic-download-free-1024x640.jpg" class="img-thumbnail" alt="b"></div></div></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-primary">
+     <div class="row"><div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+    <h3>Testimonials</h3><p>one of the estimed consulting service,solutions and sourcing organizations.</p></div>
+    </div></div>
+  </div>
+  <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">CLIENTS</div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">MICROSOFT</div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">GOOGLE</div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">APPLE</div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">SAMSUNG</div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">SONY</div>
+  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">MANY...</div>
   </div>
  <div class="row">
-     <div class="pull-right"> <img src="images/jet.jpg" alt="jet"  id="jet"> </div>
+     <div class="pull-right"> <img src="imgages/jet1.jpg" alt="jet"  id="jet" > </div>
   </div>
 </div>
 <script src="lib/jquery/jquery-1.10.1.js"></script> 
 <script type="text/javascript">
 $(document).ready(function() {
-$("img[src*='jet.jpg']").click(function() {
+$("img[src*='jet']").click(function() {
   $("#jet").addClass("jet");
   setTimeout(function(){
   $("#jet").removeClass("jet");
   },2000);
 });
+$("img[src$='640.jpg']").parent().css('padding','0');
+/*var w= $("img[src$='640.jpg']").parents('.row').width();
+$("img[src$='640.jpg']").css({'min-width':w+"px",'min-width':w+"px"});*/
 });
 </script>
 </body>
